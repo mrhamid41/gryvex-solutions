@@ -258,37 +258,35 @@ const Home = () => (
     <section className="py-24 bg-card/30">
       <div className="container mx-auto px-6">
         <SectionHeading
-          title="Meet Our Co-Founders"
-          subtitle="The visionaries behind Gryvex Solutions"
+          title="Meet Our CEO & Founder"
+          subtitle="The visionarie behind Gryvex Solutions"
         />
-        {/* <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-2 justify-center"> */}
-          {founders.map((f, i) => (
-            <motion.div
-              key={f.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.2 }}
-              whileHover={{ y: -8 }}
-              className="gradient-border rounded-2xl p-8 text-center"
-            >
-              <div className="mx-auto mb-6 h-40 w-40 overflow-hidden rounded-full border-2 border-primary/30">
-          <img
-            src={f.image}
-            alt={f.name}
-            className="h-full w-full object-cover"
-          />
-              </div>
-              <h3 className="font-display text-xl font-bold text-foreground">
-          {f.name}
-              </h3>
-              <p className="mt-1 text-sm font-medium text-primary">{f.role}</p>
-              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-          {f.desc}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+        {founders.map((f, i) => (
+          <motion.div
+            key={f.name}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: i * 0.2 }}
+            whileHover={{ y: -8 }}
+            className="gradient-border rounded-2xl p-8 text-center"
+          >
+            <div className="mx-auto mb-6 h-40 w-40 overflow-hidden rounded-full border-2 border-primary/30">
+              <img
+                src={f.image}
+                alt={f.name}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <h3 className="font-display text-xl font-bold text-foreground">
+              {f.name}
+            </h3>
+            <p className="mt-1 text-sm font-medium text-primary">{f.role}</p>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+              {f.desc}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </section>
 
