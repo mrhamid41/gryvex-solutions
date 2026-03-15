@@ -153,7 +153,7 @@ const Contact = () => {
                 gryvexsolutions@gmail.com
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Phone size={18} className="text-primary" /> 03094945097
+                <Phone size={18} className="text-primary" /> +92 324 1765607
               </div>
             </div>
 
